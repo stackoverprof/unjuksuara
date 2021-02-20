@@ -6,7 +6,7 @@ const Contact = () => {
 
     return (
         <>
-            <div >
+            <div className="card">
                 <h1>KOntak</h1>
                 <button onClick={() => setShowCard(!showCard)}>Button</button>
                 {showCard && <Card title="Alamat" desc="DIY, Kota Yogyakarta"/>}

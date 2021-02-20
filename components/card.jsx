@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { css } from '@emotion/react'
 
 const card = ({ title, desc }) => { 
 
@@ -11,24 +12,25 @@ const card = ({ title, desc }) => {
     }, [])  
 
     return (
-        <>
-            <div className="card">
-                <h1>{title}</h1>
-                <p>{desc}</p>
-            </div>
-            <style jsx>{`
-                .card {
-                    height: 200px;
-                    width: 200px;
-                    background: pink;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                }
-            `}</style>
-        </>
+        <div css={style} className="card">
+            <h1>{title}</h1>
+            <p className="desc">{desc}</p>
+        </div>
     )
 }
+
+const style = css`
+    height: 200px;
+    width: 200px;
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .desc {
+        font-size: 32px;
+    }
+`
 
 export default card
