@@ -2,25 +2,10 @@ import React, { useEffect } from 'react'
 import { css } from '@emotion/react'
 import Link from 'next/link'
 
-const card = ({ title, desc }) => { 
+const comment = () => { 
     return (
-      <div css={style} className="card">
-        <div className="container">
-            <div className="content">
-              <div>
-                <h1 className="title">{title}</h1>
-                <p className="desc">{desc}<a href="../petisi">.  Selengkapnya</a></p>
-                
-              </div>
-              <div className="picture"></div>
-            </div>
-                
-            <div className="bio">
-              <div className="pic-profile"></div>
-              <div className="name">Akbar Sigit Putra</div>
-            </div>
-        </div>
-      </div>
+      <div css={style} className="card"></div>
+        
     )
 }
 
@@ -89,4 +74,4 @@ const style = css`
     }
 `
 
-export default card
+export default comment;

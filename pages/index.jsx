@@ -1,74 +1,66 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import styles from '../styles/Home.module.css'
+import Card from '../components/card'
+import React, { useState} from 'react'
+import { css } from '@emotion/react'
+import Footer from '../components/footer'
 
-export default function Home() {
+
+ const Home = () => {
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
+      <div css={style}>
+        <div className="container">
+          <div className="sec-nav">
+            <a href = "#">Rekomendasi</a>
+            <a href = "#">Populer</a>
+            <a href = "#">Terbaru</a>
+            <form>
+              <p>Filter: </p>
+              <input type="text" name="" placeholder="Pilih Kategori"></input>
+            </form>
+          </div>
 
+          <div className="container-content">
+            <Card className="space" title="Wajibkan penggunaaan botol pakai ulang di Kampus!" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consec..." />
 
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-        <Link href="/contact">
-          <button>Menuju contact</button>
-        </Link>
-        <Link href="/contact/team">
-          <button>Menuju contact / team</button>
-        </Link>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <Card className="space" title="Wajibkan penggunaaan botol pakai ulang di Kampus!" desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consec..."/>
+          </div>
         </div>
-      </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+        <Footer className="footer"/>
+
+      </div>
+    </>
   )
 }
+
+const style = css`
+    background: #F2F2F2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    .sec-nav {
+      margin: 25px auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    
+    .sec-nav p{
+      display:inline-block;
+      margin:0;
+      padding:0;
+    }
+    .sec-nav input{
+    }
+
+    .footer{
+      position:absolute;
+    }
+
+`
+
+export default Home
