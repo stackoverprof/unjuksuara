@@ -70,117 +70,109 @@ const petisiCard = () => {
 
 const style = css`
 
-    .container{
-        padding:20px 40px;
-        max-width:80%;
-        background: white;
-        margin: 30px auto;
-        box-shadow: 4px 4px 14px #BFBFBF;
-        border-radius: 20px;
-        box-sizing: border-box;
-    }
+  .container{
+    padding:20px 40px;
+    max-width:80%;
+    background: white;
+    margin: 30px auto;
+    box-shadow: 4px 4px 14px #BFBFBF;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
 
-    .judul{
-        border: solid black 3px;
-        width: 50%;
-        margin-top:0px;
-        padding:0;
-    }
+  .judul{
+    width: 50%;
+    margin-top:0px;
+    padding:0;
+  }
 
-    .judul h1{
-        font-size:36px;
-    }
+  .judul h1{
+    font-size:36px;
+  }
 
-    .col-1 {
-        display:flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        gap: 10%;
-        border: solid black 3px;
-    }
+  .col-1 {
+    display:flex;
+    flex-direction: row;
+  }
 
-    .col-kiri{
-        // flex-grow: 1;
+  .col-kiri{
+    margin-right: 100px;
+  }
+
+  .page-pic{
+    width:500px;
+    height:400px;
+    border-radius: 20px;
+    background:black;
+  }
+
+  .col-kiri .desc{
+    width:500px;
+  }
+
+  .data{
+    // border: solid black 3px;
+    max-width: 340px;
+  }
+
+  .border{
+    border-bottom:solid black 1px;
+    padding-bottom:20px;
+  }
+
+  .profile{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .prof-pic{
+    display:inline-block;
+    width: 50px;
+    height:50px;
+    background:black;
+    border-radius:50%;
+  }
+
+  .data h3{
+    margin:0;
+    padding:0;
+  }
+
+  .data h2{
+    margin:0;
+    padding:0;
+    display:inline-block;
+  }
+
+  .dimulai .jabatan{
+    padding:0px;
+    margin:0px;
+  }
+
+  .button {
+    position:relative;
+    left:20%;
+    background-color: #333333;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    // text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     
-    }
-
-    .page-pic{
-        width:500px;
-        height:400px;
-        border-radius: 20px;
-        background:black;
-        border: solid red 3px;
-    }
-
-    .col-kiri .desc{
-        width:500px;
-    }
-
-    .data{
-        border: solid black 3px;
-    }
-
-    .border{
-        border-bottom:solid black 1px;
-        padding-bottom:20px;
-    }
-
-    .profile{
-        display:flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    .prof-pic{
-        display:inline-block;
-        width: 50px;
-        height:50px;
-        background:black;
-        border-radius:50%;
-    }
-
-    .data h3{
-        margin:0;
-        padding:0;
-    }
-
-    .data h2{
-        margin:0;
-        padding:0;
-        display:inline-block;
-    }
-
-    .dimulai .jabatan{
-        padding:0px;
-        margin:0px;
-    }
-
-    .button {
-        position:relative;
-        left:20%;
-        background-color: #333333;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        // text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        
-        margin: 40px 0;
-        width: 300px;
-        transition: 0.3s;
-      }
-    
-    .button:hover {
-        // box-shadow: 5px 5px 5px black;
-        background-color: #757575;
-        font-size: 150%;
-    }
-
-    
-
-
+    margin: 40px 0;
+    width: 300px;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    // box-shadow: 5px 5px 5px black;
+    background-color: #757575;
+    font-size: 150%;
+  }
 
 `
 
