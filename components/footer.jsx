@@ -30,7 +30,7 @@ const style = css`
         height:330px;
         position: relative;
         bottom:0;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     .container {

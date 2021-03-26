@@ -4,74 +4,63 @@ import Link from 'next/link'
 
 const comment = () => { 
     return (
-      <div css={style} className="card"></div>
-        
+      <>
+        <div css={style}>
+            <div className="container">
+                <div className="profile">
+                    <div className="pic"></div>
+                    <div className="name">Sri Utami Galapagos</div>
+                </div>
+                <div className="desc">
+                    <p>Wih mantap inih, ga ada ceritanya dari jaman dulu soal larangan-larangan protes di gedung pemerintahan! Ya kali gedung DPRD, kepatihan, dll itu gaboleh didatengin buat demo?! Kan semuanya di area Malioboro tuh!! Kaco kaco makin elitis dah penguasa jaman sekarang. Untung ada UnjukSuara, suaraku sebagai mahasiswa UGM sekaligus warga asli Jogja yang concerned sm isu ini jadi bisa nyuarin pendapat deh!</p>
+                </div>
+                
+                <div className="time">
+                    <p>3 minggu yang lalu</p>
+                </div>
+            </div>
+          
+        </div>
+      </>
     )
 }
 
 const style = css`
 
-    box-shadow: 7px 7px 14px #BFBFBF;
-    max-width: 700px;
-    background: white;
-    border-radius: 20px;
-    margin: 20px auto;
-    padding:20px;
-    position:relative;
-
-    .container {
-        margin: 10px 30px;
-        padding: 0;
+    .container{
+        padding:20px 40px;
+        max-width:40%;
+        background: white;
+        margin: 30px 10%;
+        box-shadow: 4px 4px 14px #BFBFBF;
+        border-radius: 20px;
+        box-sizing: border-box;
     }
 
-    .content{
-        display: flex; 
-        flex-direction: row;
-    }
-
-    content a{
-        margin:0;
-        padding:0;
-        font-size:30px;
-    }
-
-    .title{
-        font-size: 24px;
-        padding: 0;
-        margin:0;
-    }
-
-    .desc {
-        font-size: 14px;
-        padding: 0;
-        margin: 20px 0 20px 0;
-    }
-
-    .picture{
-        width: 100%;
-        background: black;
-        border-radius: 25px;
-        // background-image: url("../public/tupperware.jpg");
-    }
-
-    .bio{
-        display:flex;
-        justify-content: flex-start;
+    .profile{
         align-items: center;
-        gap:10px;
-        flex-direction: row;
+        display: flex;
+        gap: 10px;
     }
 
-    .pic-profile{
-        background: black;
+    .pic{
         width: 30px;
         height: 30px;
         border-radius: 50%;
+        background:black;
     }
 
     .name{
-        font-size: 17px;
+        font-weight: 600;
+        font-size: 18px;
     }
+
+    .time{
+        color:#CCCCCC;
+        font-size: 14px;
+    }
+    
+   
 `
 
-export default comment;
+export default comment

@@ -64,9 +64,12 @@ const style = css`
 
     .picture{
         width: 100%;
-        background: black;
         border-radius: 25px;
-        // background-image: url("../public/tupperware.jpg");
+        background-image: url('/tupperware.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-left: 20px;
     }
 
     .bio{
