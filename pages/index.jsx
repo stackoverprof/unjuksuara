@@ -5,13 +5,15 @@ import Card from '../components/card'
 import React, { useState} from 'react'
 import { css } from '@emotion/react'
 import Footer from '../components/footer'
-
+import Navbar from '../components/navbar'
 
  const Home = () => {
 
   return (
     <>
       <div css={style}>
+        <Navbar/>
+
         <div className="container">
           <div className="sec-nav">
             <a href = "#">Rekomendasi</a>
