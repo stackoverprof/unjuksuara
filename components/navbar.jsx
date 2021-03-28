@@ -67,10 +67,11 @@ const style = css`
   }
   
   .nav > .nav-links.right {
-    display: inline;
+    display: inline-block;
     float: right;
     font-size: 18px;
     margin-right: 20px;
+
   }
 
   .nav > .nav-links.left {
@@ -81,9 +82,7 @@ const style = css`
   }
 
   .nav-links.right #login{
-      background:#3C7DD9;
-      padding:20px 30px;
-      border-radius: 20px;
+    padding:20px 30px;
   }
   
   .nav > .nav-links > a {
